@@ -17,8 +17,10 @@ Principles
  - Role of testing values should be clear from code
 
  */
-// TODO refactor Point to take z value with trim cutoff of 70
-// TODO compare refactor (after addressing tech debt) to take z value with trim cutoff of 70
+// TODO run tests
+// TODO refactor Point to take z value with trim cutoff = 70, breaks tests
+// TODO fix tech debt
+// TODO compare refactor (after addressing tech debt) to take z value with trim cutoff = 70
 
 data class Point(var x: Int, var y: Int) {
     init {
@@ -32,7 +34,7 @@ data class Point(var x: Int, var y: Int) {
     }
 }
 
-// fixme fix tech debt create helper
+// fixme fix tech debt create helper pointOf(var x: Int = 0, var y: Int = 0, z: Int = 0)
 
 /*
 Final notes:
