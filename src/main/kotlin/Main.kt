@@ -20,11 +20,12 @@ Principles
 // TODO refactor Point to take z value with trim cutoff of 70
 // TODO compare refactor (after addressing tech debt) to take z value with trim cutoff of 70
 
-data class Point (var x: Int, var y:Int) {
+data class Point(var x: Int, var y: Int) {
     init {
         x = minOf(x, X_CUTOFF)
         y = minOf(y, Y_CUTOFF)
     }
+
     companion object {
         private const val X_CUTOFF = 50
         private const val Y_CUTOFF = 80
